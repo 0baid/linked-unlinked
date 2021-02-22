@@ -1,0 +1,22 @@
+{
+  "name": "linked-unlinked",
+  "version": "1.0.0",
+  "type" :"module",
+  "description": "A company requires all of its employees to be linked to certain tech tribes. In the file `users.ts` you'll find an array of all the company users,\r and another array of users that have already been linked to tribes. Please write a function that takes both arrays as arguments and returns an array of \r all the unlinked users.",
+  "main": "linked.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node linked.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0baid/linked-unlinked.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0baid/linked-unlinked/issues"
+  },
+  "homepage": "https://github.com/0baid/linked-unlinked#readme"
+}
