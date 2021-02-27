@@ -2,19 +2,27 @@ import {allUsers,linked} from './users.js'
 
 
 
-const sort = () =>{
+const sort = (A,B) =>{
 
-    // console.log(allUsers)
-    // console.log(linked)
-    let sorted = []
-    for(let i=0;i<allUsers.length;i++){
-        if(allUsers[i].id != linked[0].id && allUsers[i].id != linked[1].id)
-        {
-            sorted.push(allUsers[i])
+    const Aid = []
+    const Bid = []
+    const Diff = []
+    A.forEach(n => {
+        Aid.push(n.id);
+    });
+    
+    B.forEach(n => {
+        Bid.push(n.id);
+    })
+    let diffid = Aid.filter(x => !Bid.includes(x))
+
+    for(let i = 0 ;i<A.length;i++){
+        if(A[i].id == diffid[i]){
+            Diff.push(A[i])
         }
-        
     }
-    console.log(sorted)
+
+    console.log(Diff);
 }
 
-sort();
+sort(allUsers,linked);
